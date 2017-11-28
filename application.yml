@@ -1,1 +1,14 @@
-testProperty: 12345
+jhipster:
+    registry:
+        password: admin
+    security:
+        authentication:
+            jwt:
+                secret: training-secret123
+                # Token is valid 24 hours
+                token-validity-in-seconds: 86400
+                token-validity-in-seconds-for-remember-me: 2592000
+configserver:
+  status: Connected to GIT repository with jhipster config server for Minikube!
+logging:
+    file: ${spring.application.name}+'.log'
