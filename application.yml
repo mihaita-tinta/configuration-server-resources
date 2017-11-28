@@ -8,10 +8,6 @@ jhipster:
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
                 token-validity-in-seconds-for-remember-me: 2592000
-eureka:
-  client:
-    service-url:
-      defaultZone: http://admin:${jhipster.registry.password}@jhipster-registry.default.svc.cluster.local:8761/eureka
 configserver:
   status: Connected to GIT repository with jhipster config server for Minikube!
 logging:
